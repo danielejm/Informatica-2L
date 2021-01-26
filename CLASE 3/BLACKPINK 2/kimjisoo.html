@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JISOO</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <style>
+        body{
+            
+        background-color: black;
+            width: 70%;
+            min-width: 400px;
+            margin-left: auto;
+            margin-right: auto;
+            display: grid;
+            gap: 10px;
+            grid-template-columns: 33% 67%;
+            grid-template-rows: auto;
+            grid-template-areas: 
+            "imagen1 imagen1"  
+            "TITLE TITLE"          
+            "imagen2 texto1"
+            "table1 table1"
+            "texto2 texto2";
+        }
+        img {
+        width: 50%;
+        margin-left: auto;
+        margin-right:auto;
+        border-radius: 5px;
+        padding: 2px;
+        border: solid 1px black;
+        }
+        h1 {
+        color:pink;  
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-weight: 200;
+        width: 100%;
+        left: 50%;
+            right: 50%;
+            margin-left: 10%;
+            margin-right: 10%;
+
+    }
+         
+         p{
+            color:pink; 
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-weight: 200;
+            width: 100%;
+         }
+        a{ color: plum;
+    
+        }
+        #imagen1{
+            grid-area: imagen1;
+            width: 40vw;
+            position: relative;
+            left: 50%;
+            right: 50%;
+            margin-left: -20vw;
+            margin-right:-20vw;
+        
+        }
+        #TITLE{
+            grid-area: TITLE;
+        }
+        #texto1{
+            grid-area: texto1;
+        }
+        #imagen2{
+            grid-area: imagen2;
+            width: 60%;
+            
+        
+        }
+        #table1{
+            grid-area:table1 ;
+            
+        }
+        #texto2{
+            grid-area: texto2;
+        }
+        nav{
+            grid-area: nav;
+        }
+    </style>
+</head>
+<body>
+    <img src="https://1000marcas.net/wp-content/uploads/2020/01/Blackpink-Logo.png" alt="blackpink" id="imagen1">
+   
+<H1 id="TITLE">JISOO</H1>
+
+    <DIV id="texto1">
+        <p>Kim Jisoo, tambien conocida como Jisoo es una cantante, modelo, actriz e integrante del grupo internacional BLACKPINK en donde cumple las posiciones de vocalista secuandaria y visual. </p>
+        <p> Nació el 3 de enero de 1995 en Sanbon-dong, Gunpo, Corea del sur. En 2011 fue reclutada por YG Entertainment y ella acepto firmar con la compañía.  </p> 
+        <p> El 4 de mayo de 2012 fue revelada como artista de YG en su pagina web. En 2014 apareció en el video musical Spoiler de Epik High y I'm Different de Hi Suhyun. En mayo de 2015 modeló para las marcas Samsonite RED y Nikon 1 J5 para que luego, el 16 de agosto aparecer en un video promocional del videojuego AngelStone. El mismo año inició su carrera como actriz en el drama The Producers. El 8 de agosto de 2016 debutó como la segunda miembro de BLACKPINK. En 2019 participó en el drama televisivo Arthdal Chronicles  y se espera que en 2021 tome el papel protagonico del drama Snowdrop. Ella ayudo en la escritura de la canción Lovesick Girls lanzada en 2020 y espera lanzar su primer sencillo en solitario a finales de 2021. Es la embajadora mundial de Dior  </p>
+    </DIV>
+        
+       
+   
+    
+    <img src="https://upload.wikimedia.org/wikipedia/commons/1/14/Kim_Ji-soo_at_Jimmy_Choo_Event_on_January_09%2C_2020_%2815%29.jpg" alt="imagen2" id="imagen2">
+
+   
+    <p id="text2">Click <a href="index.html">aquí</a> para volver a la página inicial</p>
+</body>
+</html>

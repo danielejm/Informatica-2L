@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JENNIE</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <style>
+        body{
+            
+        background-color: black;
+            width: 70%;
+            min-width: 400px;
+            margin-left: auto;
+            margin-right: auto;
+            display: grid;
+            gap: 10px;
+            grid-template-columns: 33% 67%;
+            grid-template-rows: auto;
+            grid-template-areas: 
+            "imagen1 imagen1" 
+            "TITLE TITLE"           
+            "imagen2 texto1"
+            "table1 table1"
+            "texto2 texto2";
+        }
+        img {
+        width: 50%;
+        margin-left: auto;
+        margin-right:auto;
+        border-radius: 5px;
+        padding: 2px;
+        border: solid 1px black;
+        
+        }
+      h1 {
+        color:pink;  
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-weight: 200;
+        width: 100%;
+        left: 50%;
+            right: 50%;
+            margin-left: 10%;
+            margin-right: 10%;
+
+    }
+         p{
+            color:pink; 
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-weight: 200;
+            width: 100%;
+         }
+        a{ color: plum;
+    
+        }
+        #imagen1{
+            grid-area: imagen1;
+            width: 40vw;
+            position: relative;
+            left: 50%;
+            right: 50%;
+            margin-left: -20vw;
+            margin-right:-20vw;
+        }
+        #TITLE{
+            grid-area:TITLE;
+        }
+        #texto1{
+            grid-area: texto1;
+        }
+        #imagen2{
+            grid-area: imagen2;
+            width: 60%;
+            
+        
+        }
+        #table1{
+            grid-area:table1 ;
+            
+        }
+        #texto2{
+            grid-area: texto2;
+        }
+        nav{
+            grid-area: nav;
+        }
+    </style>
+</head>
+<body>
+    <img src="https://1000marcas.net/wp-content/uploads/2020/01/Blackpink-Logo.png" alt="blackpink" id="imagen1">
+   
+    <h1 id="TITLE">JENNIE</h1>
+
+
+    <DIV id="texto1">
+        <p>Jennie Kim, tambien conocida como JENNIE es una cantante, modelo y integrante del grupo internacional BLACKPINK en donde cumple las posiciones de rapera principal y vocalista secuandaria. </p>
+        <p> JENNIE nació el 16 de enero de 1996 en Cheongdam-dong, Corea del sur, a la corta edad de 9 años se traslado con su familia a Auckland, Nueva Zelanda en donde creo una fascinacion por el hip hop coreano y la música en general. Esto la llevo a audicionar y pasar una audicion para la disquera YG Entertainment en donde perfeccionó su técnica vocal, baile y rap. </p> 
+        <p> Antes de ser parte del grupo, JENNIE colaboró junto a varios artistas de la disquera tales como Seungri, G Dragon o Lee Hi. El 8 de agosto de 2016, debutó como la primera miembro de BLACKPINK con el single doble SQUARE ONE. El 12 de noviembre de 2018 lanzo su primer sencillo en solitario SOLO, el cual llego a los charts nacionales e internacionales. En 2020 escribió y produjo parte de la cancion Lovesick Girls de BLACKPINK. Es la embajadora mundial de Channel
+        </p>
+    </DIV>
+        
+       
+    <table id="table1" class="table table-striped table-dark">
+        <thead>
+          <tr>
+            <th scope="col">Portada</th>
+            <th scope="col">Nombre</th>
+            <th scope="col">Fecha de Lanzamiento</th>
+   
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row"><img width=200% src="https://upload.wikimedia.org/wikipedia/en/thumb/9/9e/Lee_Hi_-_First_Love%2C_Pt._2.jpg/220px-Lee_Hi_-_First_Love%2C_Pt._2.jpg" alt="special"></th>
+            <td> <a href="https://youtu.be/MvxxlKJ11aI">Lee Hi - Special (con JENNIE)</a> </td>
+            <td>7 de marzo de 2013</td>
+            
+          </tr>
+          <tr>
+            <th scope="row"><img src="https://upload.wikimedia.org/wikipedia/en/thumb/b/b9/Seungri_-_Let%27s_Talk_About_Love.jpg/220px-Seungri_-_Let%27s_Talk_About_Love.jpg" alt="ggbe"></th>
+            <td> <a href="https://youtu.be/Vm0g8nUgqNc">Seungri - GG Be (con JENNIE)</a>  </td>
+            <td>19 de agosto de 2013</td>
+          </tr>
+          <tr>
+            <th scope="row"><img src="https://m.media-amazon.com/images/I/71TSellOcAL._SS500_.jpg" alt="black"></th>
+            <td> <a href="https://youtu.be/qD6UBAi6FKo">G-Dragon - Black (con JENNIE)</a>  </td>
+            <td>2 de septiembre de 2013</td>
+          </tr>
+          <tr>
+            <th scope="row"><img src="https://upload.wikimedia.org/wikipedia/en/thumb/2/20/Jennie_%E2%80%93_%22Solo%22_%E2%80%93_Digital_Cover.png/220px-Jennie_%E2%80%93_%22Solo%22_%E2%80%93_Digital_Cover.png" alt="solo"></th>
+            <td> <a href="https://youtu.be/b73BI9eUkjM">SOLO</a>  </td>
+            <td>2 de noviembre de 2018</td>
+          </tr>
+        </tbody>
+      </table>
+    
+    <img src="https://i.pinimg.com/736x/aa/a6/a3/aaa6a368cc4abdf487c027b98caf2dac.jpg" alt="imagen2" id="imagen2">
+
+   
+    <p id="text2">Click <a href="index.html">aquí</a> para volver a la página inicial</p>
+</body>
+</html>
