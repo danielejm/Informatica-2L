@@ -15,4 +15,19 @@ for(ingrediente of ingredientes){
 
 tabla.innerHTML = contenidoTabla;
 
+let elementos = [
+    {nombre:"pan"},
+    {nombre:"arroz"},
+    {nombre:"huevos"},
+    {nombre:"carne"},
+    {nombre:"pescado"},
+   
+   ]
+   
+   let lista = document.querySelector('#lista')
+   let elementosLista= '<ul></ul>'
+   for(elemento of elementos){
+       elementosLista = elementosLista + `<li>${elemento.nombre}</li>`
+   }
 
+   lista.innerHTML = elementosLista;
