@@ -1,11 +1,13 @@
-let tareas = [ ]
+let tareas = JSON.parse(localStorage.getItem("tareas"));
+if (tareas == null) tareas = [];
+
 let tabla = document.querySelector('#work')
 
 function llenarTabla(){
     let contenidoTabla = '<tr><th>Materia</th><th>Descripción</th><th>Fecha de Entrega</th></tr>'
     for (tarea of tareas){
         contenidoTabla = contenidoTabla + `<tr><td>${tarea.materia}</td><td>${tarea.desc}</td>
-        <td>${tarea.fecha}</td></tr>`
+        <td>${tarea.fecha}</td></tr><td><tr>` 
     }
     tabla.innerHTML = contenidoTabla;
 }
@@ -25,10 +27,10 @@ function addNota(){
 
     tareas.push(tareaNueva)
     llenarTabla();
-    return false;
+    localStorage.setItem("tareas", JSON.stringify(tareas))
 }
 
 form.onsubmit = addNota;
-
+;
 
 llenarTabla();
