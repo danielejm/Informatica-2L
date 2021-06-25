@@ -72,4 +72,4 @@ window.onclick = function(event){
     else {  vY = -vY }
 
     
-}
+}  
