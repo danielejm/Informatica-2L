@@ -1,11 +1,14 @@
+
 let canvas = document.querySelector("#miCanvas")
+
+
 
 let ctx = canvas.getContext("2d")
 let dT = 30;
 let vX = 0
 let x = 700
 let score = 0
-
+let vY = 100
 
 
 function chest (xH){
@@ -74,10 +77,15 @@ class Star{
 
 let stars = []
 
+
+
+
+
 function createStar(){
-    let xS = 1340*Math.random() - 10;
+    
+    let xS = 1300*Math.random() + 30;
     let y = 30;
-    let vY = 100
+    let vY = 250*Math.random() + 100;
     let color = "yellow"
     let newStar = new Star(xS, y, vY, color);
 
@@ -85,7 +93,7 @@ function createStar(){
     stars.push(newStar);
 }
 
-window.setInterval(createStar, 3000);
+window.setInterval(createStar, 4000);
 
 
 function backgroundMoon () 
@@ -121,7 +129,17 @@ function detectarColision () {
    let deltaStars2 = nStarsf2 - nStarsf1
    score = score - deltaStars2
 
+   if (score == -1) {
+    
+    window.location.replace("inicio.html")
+    alert("Perdiste... vuelve a intentarlo")
+    }
 
+    if (score == 50) {
+    
+        window.location.replace("inicio.html")
+        alert("¡Felicidades, ganaste!")
+        }
 }
 
 function drawAndMove(){
@@ -164,6 +182,10 @@ window.onkeyup = function(event){
 vX = 0
 }
 
+
+
+
 text ()
 backgroundMoon ()
 chest(x)
+
