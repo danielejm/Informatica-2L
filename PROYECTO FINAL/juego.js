@@ -150,7 +150,7 @@ function drawAndMove(){
 
     let dX = dT/1000 *vX
     
-    if (x < 1195 && x > 0){
+    if ((x + dX) < 1195 && (x + dX) > 0){
     x = x + dX;
     }
 
