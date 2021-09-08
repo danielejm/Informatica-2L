@@ -129,13 +129,13 @@ function detectarColision () {
    let deltaStars2 = nStarsf2 - nStarsf1
    score = score - deltaStars2
 
-   if (score == -1) {
+   if (score < 0) {
     
     window.location.replace("inicio.html")
     alert("Perdiste... vuelve a intentarlo")
     }
 
-    if (score == 50) {
+    if (score > 49) {
     
         window.location.replace("inicio.html")
         alert("¡Felicidades, ganaste!")
@@ -149,8 +149,10 @@ function drawAndMove(){
     ctx.clearRect(0,0, 1400, 635);
 
     let dX = dT/1000 *vX
-    x = x + dX;
     
+    if (x < 1345 && x > 0){
+    x = x + dX;
+    }
 
     backgroundMoon ()
    
@@ -159,9 +161,8 @@ function drawAndMove(){
         star.dibujarse(); 
     }
     
-    if (x < 1345 && x > 0){
     chest(x)
-    }
+  
     
     detectarColision ()
 
