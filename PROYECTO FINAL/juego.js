@@ -170,10 +170,10 @@ window.setInterval(drawAndMove, dT);
 
 window.onkeydown = function(event){
     
-    if (event.key == "ArrowRight" && x < 1345 ) {
+    if (event.key == "ArrowRight" && xH < 1345 ) {
         vX = 300
     }
-   if (event.key == "ArrowLeft"  && x > 0) {
+   if (event.key == "ArrowLeft"  && xH > 0) {
        vX = -300
    }
 }
