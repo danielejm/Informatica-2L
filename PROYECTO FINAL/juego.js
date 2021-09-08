@@ -158,8 +158,11 @@ function drawAndMove(){
         star.moverse();
         star.dibujarse(); 
     }
+    
+    if (x < 1345 && x > 0){
     chest(x)
-
+    }
+    
     detectarColision ()
 
     text ()
@@ -170,10 +173,10 @@ window.setInterval(drawAndMove, dT);
 
 window.onkeydown = function(event){
     
-    if (event.key == "ArrowRight" && xH < 1345 ) {
+    if (event.key == "ArrowRight") {
         vX = 300
     }
-   if (event.key == "ArrowLeft"  && xH > 0) {
+   if (event.key == "ArrowLeft") {
        vX = -300
    }
 }
